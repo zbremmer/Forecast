@@ -25,21 +25,22 @@ class Forecast:
     ------------
     data : pandas.DataFrame
         A dataframe of the data to be used for forecasting
-    start_date : str
-        The start date of the forecast period
-    end_date : str
-        The end date of the forecast period
+    forecast_start : str
+        The start of the forecast period (should match the index of the dataframe)
+    forecast_end : str
+        The end of the forecast period (should match the index of the dataframe)
     lags : int
         The number of lags to generate for supervised learning (default = 90)
-        TODO: This should be found using automated search in future versions of project
+        TODO: This should be found using automated search in future versions of project -- only needed for supervised
+        learning, not for ARIMA etc.
 
     """
 
-    def __init__(self,df, start_date, end_date, lags: int = 90):
+    def __init__(self, df, forecast_start, forecast_end, lags: int = 90):
 
         self.data = df
-        self.start_date = start_date
-        self.end_date = end_date
+        self.forecast_start = forecast_start
+        self.forecast_end = forecast_end
         self.lags = lags
         self.agg_data = None
         self.train_data = None
