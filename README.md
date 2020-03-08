@@ -8,8 +8,8 @@ take.
 
 # Model Classes
 
-Each model should be created in its own class file. In order to use the models, the name and instantiation call need to
-be added to the model dictionary within the get_model() method. 
+Each model should be created as a separate class. The models will exist as independent objects so that more than one can
+be created by a user. 
 
 All models should be built with the following assumptions: 
 1. The instance of forecast will have a dataframe with a datetime index, a target field labeled y, and various features
