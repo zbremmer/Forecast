@@ -31,5 +31,3 @@ Additionally, models should take **kwargs in case users want to specify any addi
 ## Todo
 - Build plotting capabilities using altair. Should include timeseries plotting and diagnostics (ACF/PACF), decomp, etc.
 - Restructure so everything no in util
-- Move test / train split and some feature generation (lags, scaling) to models
-- Add models (SARIMAX, prophet?, surprise?)
