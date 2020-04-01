@@ -29,5 +29,6 @@ Additionally, models should take **kwargs in case users want to specify any addi
 
 
 ## Todo
-- Build plotting capabilities using altair. Should include timeseries plotting and diagnostics (ACF/PACF), decomp, etc.
+- Build a simple EDA process to analyze the time series, plot ACF/PACF, cross-corelation (if exists), decomp, etc.
+- Build plotting capabilities. Should include timeseries plotting and diagnostics (ACF/PACF), decomp, etc.
 - Restructure so everything no in util
